@@ -138,16 +138,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private char checkWinner(){
-//        if ((values[0][0]==values[0][1] && values[0][0]==values[0][2])
-//        || (values[1][0]==values[1][1] && values[1][0]==values[1][2])
-//        ||(values[2][0]==values[2][1] && values[2][0]==values[2][2])
-//        ||(values[0][0]==values[1][0] && values[0][0]==values[2][0])
-//        ||(values[0][1]==values[1][1] && values[0][1]==values[2][1])
-//        ||(values[0][2]==values[1][2] && values[0][2]==values[2][2])
-//        ||(values[0][0]==values[1][1] && values[0][0]==values[2][2])
-//        ||(values[0][2]==values[1][2] && values[0][2]==values[2][0])){
-//
-//        }
 
         for(int i=0;i<3;i++){
             if(values[i][0]== values[i][1] && values[i][0]==values[i][2]){
@@ -197,17 +187,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void findViews(){
-        buttonArray[0][0] = findViewById(R.id.btn_11);
-        buttonArray[0][1] = findViewById(R.id.btn_12);
-        buttonArray[0][2] = findViewById(R.id.btn_13);
+        buttonArray[0][0] = findViewById(R.id.btn_00);
+        buttonArray[0][1] = findViewById(R.id.btn_01);
+        buttonArray[0][2] = findViewById(R.id.btn_02);
 
-        buttonArray[1][0] = findViewById(R.id.btn_21);
-        buttonArray[1][1] = findViewById(R.id.btn_22);
-        buttonArray[1][2] = findViewById(R.id.btn_23);
+        buttonArray[1][0] = findViewById(R.id.btn_10);
+        buttonArray[1][1] = findViewById(R.id.btn_11);
+        buttonArray[1][2] = findViewById(R.id.btn_12);
 
-        buttonArray[2][0] = findViewById(R.id.btn_31);
-        buttonArray[2][1] = findViewById(R.id.btn_32);
-        buttonArray[2][2] = findViewById(R.id.btn_33);
+        buttonArray[2][0] = findViewById(R.id.btn_20);
+        buttonArray[2][1] = findViewById(R.id.btn_21);
+        buttonArray[2][2] = findViewById(R.id.btn_22);
 
         status = findViewById(R.id.game_status);
         player1_score = findViewById(R.id.player_1_score);
